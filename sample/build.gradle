@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '29.0.3'
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.simplecityapps.recyclerview_fastscroll.sample"
@@ -26,10 +26,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     //Appcompat
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
 
     //RecyclerView
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
     //RecyclerView-FastScroll
     implementation project(':recyclerview-fastscroll')
