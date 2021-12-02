@@ -24,5 +24,18 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = "com.simplecityapps.recyclerview_fastscroll"
+                artifactId = 'recyclerview_fastscroll'
+                version = '1.0'
+            }
+        }
+    }
+}
+
 //To deploy, re-comment following line & run ./gradlew clean assembleRelease install bintrayUpload
 //apply from : 'deploy.gradle'
